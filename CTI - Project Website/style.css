@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Baskervville+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+body, ul, li, a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+header{
+    z-index: 10;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    max-height: 80px;
+    color: #333;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a{
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: #333;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+
+.ri-account-circle-line{
+    font-weight: lighter;
+    font-size: 38px; 
+}
+.ri-account-circle-line:hover{
+    text-shadow: rgba(0,0,0,0.4);
+}
+
+.heroimg{
+    width: 100%;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+}
+
+.btn{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
+    padding: 15px;
+}
+
+.btn-item-img{
+    width: 80%;
+    margin: auto auto;
+}
+
+.btn-item{
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    font-weight: bolder;
+    font-style: normal;
+    text-decoration: none;
+    color: black;
+    padding: 2rem;
+    display: grid;
+    gap: 1rem;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 5px 5px 30px rgba(0,0,0,0.4);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-item a{
+    color: black;
+}
+
+.btn-item-profile{
+    display: none;
+}
+
+@media (max-width:768px){
+
+    .btn{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .btn-item-profile{
+        display:block;
+    }
+
+    .btn-item{
+        height: fit-content;
+        width: fit-content;
+    }
+
+    .btn-item img{
+        width: 100px;   
+        margin: auto auto;
+    }
+
+    .logo img{
+        max-height: 50px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    .nav-menu{
+        position: fixed;
+        left: 100%;
+        top: 50px;
+        gap: 0;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        background-color: white;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    .nav-menu.active{
+        left: 0;
+    }
+}

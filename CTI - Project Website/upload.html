@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <title>CTI - Project</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <a class="logo" href="home.html"><img src="Img/Logo.png" height="100vh" alt="Logo"></a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="home.html">HOME</a></li>
+                <li class="nav-item"><a href="inventory.html">DOCUMENTS</a></li>
+                <li class="nav-item"><a href="profile.html"><i class="ri-account-circle-line"></i></a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <input type="file" id="file-input" multiple />
+        <label for="file-input">
+          <i class="fa-solid fa-arrow-up-from-bracket"></i>
+          &nbsp; Choose Files To Upload
+        </label>
+        <div id="num-of-files">No Files Choosen</div>
+        <ul id="files-list"></ul>
+    </div>
+    <label for="submit">
+        <i class="fa-solid fa-arrow-up-from-bracket submit-btn-file"></i>
+        &nbsp; UPLOAD
+      </label>
+    <script src="main2.js"></script>
+</body>
+</html>

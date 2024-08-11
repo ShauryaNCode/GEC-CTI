@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Baskervville+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+h1{
+    color: #333;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    text-align: center;
+    padding: 5px;
+}
+
+hr{
+    height: 3px;
+    background-color: #333;
+    width: 80%;
+}
+
+.doc{
+    margin: 0 auto;
+}
+.doc-preview{
+    width: 90%;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin: 0 auto;
+}
+
+.btn-item{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+@media(max-width:768px){
+    .doc-preview{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
