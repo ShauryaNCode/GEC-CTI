@@ -5,6 +5,10 @@ body{
     background-position: 100%;
 }
 
+.login-pg{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
 
 .sign-in{
     max-width: 600px;
